@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Kareer Circle</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="navigate()">&times;</a>
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
+		</div>
+		
+		<div id="content">
+			<section id="splash">
+				<nav>
+					<div>
+						<img class="float-left logo" src="img/logo2.png" alt="Kareer Circle">
+
+						<i class="fa fa-2x fa-bars float-right" onclick="navigate()"></i>
+					</div>
+				</nav>
+
+				<div class="container">
+					<h1 class="desktop">Access information about your desired workplace and share your work experience</h1>
+					<h4 class="mobile">Access information about your desired workplace and share your work experience</h4>
+					<form class="form-inline">
+					  <div class="form-group col-md-9">
+					    <input type="text" class="form-control" placeholder="Search">
+					  </div>
+					  <button type="submit" class="btn btn-primary col-md-3">Search</button>
+					</form>	
+				</div>
+			</section>
+
+			<section id="howitworks">
+				<div class="container">
+					<h2 class="header">How it works</h2>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="cardcus">
+								<img src="img/add.png">
+								<h5 class="header">Create an Account</h5>
+								<p>Create an account and have access to the broad capabilities of Kareer Circle</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="cardcus">
+								<img src="img/search.png">
+								<h5 class="header">Search Companies</h5>
+								<p>Search for companies using the search bar. You can't find your company after searching? There is an option to add the company</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="cardcus">
+								<img src="img/review.png">
+								<h5 class="header">Give Reviews</h5>
+								<p>Give honest reviews about the company, general reviews, salary reviews, interview reviews and aptitude test.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="counters" class="desktop">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>4</h3>
+							<p>Companies</p>
+							<div class="separator-line-thick bg-mid-gray margin-three"></div>
+						</div>
+						<div class="col-md-3">
+							<h3>4</h3>
+							<p>General Reviews</p>
+							<div class="separator-line-thick bg-mid-gray margin-three"></div>
+						</div>
+						<div class="col-md-3">
+							<h3>4</h3>
+							<p>Salary Reviews</p>
+							<div class="separator-line-thick bg-mid-gray margin-three"></div>
+						</div>
+						<div class="col-md-3">
+							<h3>4</h3>
+							<p>Interview Reviews</p>
+							<div class="separator-line-thick bg-mid-gray margin-three"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="addedCompanies">
+				<div class="container">
+					<h2 class="header text-center">Companies</h2>
+					<br>
+					<div id="accordion" role="tablist">
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					      <h5 class="mb-0">
+					        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          <img src="img/bells.jpg" alt=""> Bells University of Technology <i class="fa fa-caret-down"></i>
+					        </a>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+					      	<ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-genr" role="tab" aria-controls="pills-home" aria-selected="true">1 General Review</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-salaryr" role="tab" aria-controls="pills-profile" aria-selected="false">0 Salary Reviews</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-interview-tab" data-toggle="pill" href="#pills-interr" role="tab" aria-controls="pills-interview" aria-selected="false">3 Interview Reviews</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-aptitude-tab" data-toggle="pill" href="#pills-aptitude" role="tab" aria-controls="pills-aptitude" aria-selected="false">1 Aptitude Test</a>
+							  </li>
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+							  <div class="tab-pane fade show active" id="pills-genr" role="tabpanel" aria-labelledby="pills-home-tab">"Great place to work, although the staff..." <a href="#">Read more reviews</a></div>
+							  <div class="tab-pane fade" id="pills-salaryr" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+							  <div class="tab-pane fade" id="pills-interr" role="tabpanel" aria-labelledby="pills-interview-tab">...</div>
+							  <div class="tab-pane fade" id="pills-aptitude" role="tabpanel" aria-labelledby="pills-aptitude-tab">...</div>
+							</div>
+
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingTwo">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Collapsible Group Item #2
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body">
+					        
+					      	<ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-genr" role="tab" aria-controls="pills-home" aria-selected="true">1 General Review</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-salaryr" role="tab" aria-controls="pills-profile" aria-selected="false">0 Salary Reviews</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-interview-tab" data-toggle="pill" href="#pills-interr" role="tab" aria-controls="pills-interview" aria-selected="false">3 Interview Reviews</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-item nav-link" id="pills-aptitude-tab" data-toggle="pill" href="#pills-aptitude" role="tab" aria-controls="pills-aptitude" aria-selected="false">1 Aptitude Test</a>
+							  </li>
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+							  <div class="tab-pane fade show active" id="pills-genr" role="tabpanel" aria-labelledby="pills-home-tab">"Great place to work, although the staff..." <a href="#">Read more reviews</a></div>
+							  <div class="tab-pane fade" id="pills-salaryr" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+							  <div class="tab-pane fade" id="pills-interr" role="tabpanel" aria-labelledby="pills-interview-tab">...</div>
+							  <div class="tab-pane fade" id="pills-aptitude" role="tabpanel" aria-labelledby="pills-aptitude-tab">...</div>
+							</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="card-header" role="tab" id="headingThree">
+					      <h5 class="mb-0">
+					        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Collapsible Group Item #3
+					        </a>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
