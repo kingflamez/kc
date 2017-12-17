@@ -1,16 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 
 body {
 	font-family: 'Roboto', sans-serif;
 }
 
 nav .logo {
-	height: 60px;
+	height: 40px;
 }
 
 nav {
 	width: 100%;
-    padding: 26px 45px;
+    padding: 19px 16px;
+}
+
+.company-header {
+	background-color: #fff;
+}
+
+.company-header .img {
+	background-color: #000;
+	background-image: url(../img/blur.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 30px;
+}
+
+.company-header #details {
+	padding: 20px;
+}
+
+.company-header .header {
+	margin-bottom: 30px !important;
+	margin-top: 0 !important;
+}
+
+.company-header .claim {
+	color: #333;
+	font-weight: lighter;
+	transition: font-weight 0.6s;
+}
+
+.company-header .claim:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.company-header .claim i {
+	color: #ff4943;
+	margin-right: 5px;
+	transition: color 0.6s;
+}
+
+.company-header .claim:hover i {
+	color: #0CAA41;
 }
 
 .general-nav {
@@ -50,15 +93,29 @@ nav {
 	display: inline-block;
 }
 
+.company-header .mobile{
+	display: block;
+}
+
+.company-header .mobile a {
+	margin: 15px auto;
+	display: block;
+}
+
 .desktop {
 	display: none;
 }
 
 #splash {
-	background-image: url('../img/splash.jpg');
+	background-image: url('../img/splash2.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: #fff;
+}
+
+#splash h1,
+#splash h4 {
 	color: #fff;
 }
 
@@ -102,6 +159,12 @@ nav {
 	background-color: transparent;
 }
 
+.btn-default {
+	border: 1px solid #4f4f4f;
+	color: #4f4f4f;
+	background-color: transparent;
+}
+
 .btn-primary:hover,
 .btn-primary:focus{
 	background-color: #007da5;
@@ -110,6 +173,13 @@ nav {
 .btn-success:hover,
 .btn-success:focus{
 	background-color: #0d69b2;
+}
+
+.btn-default:hover,
+.btn-default:focus{
+	background-color: transparent;
+	color: #4f4f4f;
+	border-color: #4f4f4f;
 }
 
 .btn-secondary:hover,
@@ -141,11 +211,11 @@ nav {
 	padding: 40px;
 }
 
-#companyreview .logo-cont {
+.logo-cont {
 	padding: 20px;
 }
 
-#companyreview .logo{
+.companyreviewlogo{
 	height: 130px;
     background-repeat: no-repeat;
     background-position: center;
@@ -247,6 +317,74 @@ p {
     background: #d4d4d4 !important;
 }
 
+.company-header #links {
+	padding: 15px 30px 0px;
+	z-index: 999 !important;
+	background-color: white;
+}  
+
+.company-header #links .buttons {
+	margin-top: 0;
+	margin-bottom: 20px
+}
+
+.company-header #links .menu {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.company-header #links .menu ul {
+	list-style-type: none;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+	background:
+		/* Shadow covers */
+		linear-gradient(90deg, white 30%, rgba(255,255,255,0)),
+		linear-gradient(90deg, rgba(255,255,255,0), white 70%) 100% 0,
+		
+		/* Shadows */
+		radial-gradient(0 50%, farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(100% 50%,farthest-side, rgba(0,0,0,.2), rgba(0,0,0,0)) 100% 0;
+	background:
+		/* Shadow covers */
+		linear-gradient(90deg, white 30%, rgba(255,255,255,0)),
+		linear-gradient(90deg, rgba(255,255,255,0), white 70%) 100% 0,
+		
+		/* Shadows */
+		radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 100% 0;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+	
+	/* Opera doesn't support this in the shorthand */
+	background-attachment: local, local, scroll, scroll;
+	margin-bottom: 0;
+}
+
+.company-header #links .menu ul li {
+  display: inline-block;
+}
+
+.company-header #links .menu ul li a {
+  display: inline-block;
+  padding: 0.9em 1em;
+  color: #959595;
+  font-weight: lighter;
+}
+
+.company-header #links .menu ul li a:hover,
+.company-header #links .menu ul li a:focus,
+.company-header #links .menu ul li a.current {
+	color: #3a3a3a;
+	text-decoration: none;
+	border-bottom: 3px solid #3a3a3a;
+	font-weight: normal;
+}
+
 #addedCompanies {
 	padding-top: 0;
 	padding-bottom: 30px;
@@ -295,7 +433,7 @@ p {
 
 .body {
 	background-color: #f2f2f2;
-	padding: 40px 0;
+	padding: 10px 0;
 }
 
 #search {
@@ -359,6 +497,29 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 30px;
 }
 
+#company section {
+	background-color: #fff;
+	margin: 20px auto;
+	border-radius: 8px;
+	padding: 25px;
+}
+
+#company section p {
+	font-size: 0.8em;
+}
+
+#company .map {
+	height: 300px;
+	padding: 0;
+}
+
+.map iframe {
+	border: 0;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
 footer{
 	background-color: #343434;
 	color: #fff;
@@ -374,7 +535,7 @@ footer{
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
-    background-color: #095fac; /* Black*/
+    background-color: #fff; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -382,18 +543,22 @@ footer{
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    border-bottom: 1px solid;
-    color: #c7eafc;
+    font-size: 1.2em;
+    border-bottom: 1px solid #F1F2F2;
+    color: #404040;
     display: block;
     transition: 0.3s;
 }
 
+.sidenav .links {
+	border-top: 1px solid #c2c2c2;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 /* Position and style the close button (top right corner) */
@@ -402,7 +567,7 @@ footer{
     border: 0;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 28px;
     margin-left: 50px;
     -ms-transform: translate(0); /* IE 9 */
     -webkit-transform: translate(0); /* Safari */
@@ -413,6 +578,29 @@ footer{
 #content {
     transition: transform .5s;
     /*padding: 20px;*/
+}
+
+.circle {
+    width: 100px;
+    margin: 6px 6px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.circle strong {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.circle-text {
+	padding-top: 33px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -427,6 +615,15 @@ footer{
 		text-align: center;
 	}
 
+	nav {
+		width: 100%;
+	    padding: 26px 45px;
+	}
+
+	nav .logo {
+		height: 60px;
+	}
+
 	#addedCompanies {
 		padding-top: 60px;
 	}
@@ -435,20 +632,28 @@ footer{
 		padding: 30px 50px;
 	}
 
+	.company-header #links .menu{
+		margin-bottom: 0;
+	}
+
 	.mobile {
-		display: none;
+		display: none !important;
 	}
 
 	.desktop {
 		display: block;
 	}
 
-	#companyreview .logo{
+	.companyreviewlogo{
 		height: 100%;
 	}
 
 	#companyreview {
 		padding: 30px;
+	}
+
+	.body {
+		padding: 40px 0;
 	}
 
 	.general-nav {
