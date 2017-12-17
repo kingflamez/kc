@@ -9,6 +9,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/star-rating-svg.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
@@ -68,6 +69,61 @@
 							</div>
 						</div>
 					</div>
+					<a style="margin-bottom: 40px" class="btn btn-secondary" href="#" role="button">Give Review</a>
+				</div>
+			</section>
+
+			<section id="companyreview">
+				<div class="container">
+					<h2 class="header">Company Review</h2>
+					<div class="review">
+						<div class="row">
+							<div class="col-md-4 logo-cont">
+								<div class="logo" style="background-image: url('https://kareercircle.com/public/logos/1507916292.jpg');">
+									
+								</div>
+							</div>
+							<div class="col-md-8">
+								<a href="#" class="name"><h3>Ikeja Electric</h3></a>
+								<a href="#" class="title"><q>Too Nice</q></a>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="my-rating"></div>
+									</div>
+									<div class="col-md-9">
+										<p>Current Employee - Senior Engineer in Akute</p>
+									</div>
+								</div>
+								<div class="row pro">
+									<div class="col-md-12 no-padding">
+										<q>You know that electricity is fun and really fun to work with a lot of fun especially touching naked wire. Electricity cares bro</q> ... <a href="#" title="">Read More</a>
+									</div>
+								</div>
+								<div class="row text-center counters">
+									<div class="col-md-3 col-6">
+										<a href="" title="">
+											4 reviews
+										</a>
+									</div>
+									<div class="col-md-3 col-6">
+										<a href="" title="">
+											4 salaries
+										</a>
+									</div>
+									<div class="col-md-3 col-6">
+										<a href="" title="">
+											4 interviews
+										</a>
+									</div>
+									<div class="col-md-3 col-6">
+										<a href="" title="">
+											4 aptitude test
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -100,95 +156,124 @@
 
 			<section id="addedCompanies">
 				<div class="container">
-					<h2 class="header text-center">Companies</h2>
+					<h2 class="header text-center">Newly Added Companies</h2>
 					<br>
-					<div id="accordion" role="tablist">
-					  <div class="card">
-					    <div class="card-header" role="tab" id="headingOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					      <h5 class="mb-0">
-					        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          <img src="img/bells.jpg" alt=""> Bells University of Technology <i class="fa fa-caret-down"></i>
-					        </a>
-					      </h5>
-					    </div>
+					<div class="row">
+						<div class="col-md-3">
+						  	<a href="#" class="company">
+						  		<div class="image">
+						  			<img src="http://www.peoplesdailyng.com/wp-content/uploads/2014/02/Guaranty-Trust-Bank-gtbank-logo.jpg" >
+						  		</div>
+						  		<h6>Guaranty Trust Bank</h6>
+						  		<div class="rating">
+						  			<i class="my-rating"></i> <span>4.5</span>
+						  		</div>
+						  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+						  	</a>
+						</div>
+						<div class="col-md-3">
+						  	<a href="#" class="company">
+						  		<div class="image">
+						  			<img src="https://kareercircle.com/public/logos/1507916292.jpg" >
+						  		</div>
+						  		<h6>Ikeja Electric</h6>
+						  		<div class="rating">
+						  			<i class="my-rating"></i> <span>4.5</span>
+						  		</div>
+						  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+						  	</a>
+						</div>
+						<div class="col-md-3">
+						  	<a href="#" class="company">
+						  		<div class="image">
+						  			<img src="https://kareercircle.com/public/logos/1511944180.png" >
+						  		</div>
+						  		<h6>PricewaterhouseCoopers</h6>
+						  		<div class="rating">
+						  			<i class="my-rating"></i> <span>4.5</span>
+						  		</div>
+						  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+						  	</a>
+						</div>
+						<div class="col-md-3">
+						  	<a href="#" class="company">
+						  		<div class="image">
+						  			<img src="https://kareercircle.com/public/logos/1507916817.jpg" >
+						  		</div>
+						  		<h6>KPMG</h6>
+						  		<div class="rating">
+						  			<i class="my-rating"></i> <span>4.5</span>
+						  		</div>
+						  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+						  	</a>
+						</div>
 
-					    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-					      <div class="card-body">
-					      	<ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
-							  <li class="nav-item">
-							    <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-genr" role="tab" aria-controls="pills-home" aria-selected="true">1 General Review</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-salaryr" role="tab" aria-controls="pills-profile" aria-selected="false">0 Salary Reviews</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-interview-tab" data-toggle="pill" href="#pills-interr" role="tab" aria-controls="pills-interview" aria-selected="false">3 Interview Reviews</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-aptitude-tab" data-toggle="pill" href="#pills-aptitude" role="tab" aria-controls="pills-aptitude" aria-selected="false">1 Aptitude Test</a>
-							  </li>
-							</ul>
-							<div class="tab-content" id="pills-tabContent">
-							  <div class="tab-pane fade show active" id="pills-genr" role="tabpanel" aria-labelledby="pills-home-tab">"Great place to work, although the staff..." <a href="#">Read more reviews</a></div>
-							  <div class="tab-pane fade" id="pills-salaryr" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-							  <div class="tab-pane fade" id="pills-interr" role="tabpanel" aria-labelledby="pills-interview-tab">...</div>
-							  <div class="tab-pane fade" id="pills-aptitude" role="tabpanel" aria-labelledby="pills-aptitude-tab">...</div>
+					</div>
+					<div class="desktop">
+						<div class="row">
+							<div class="col-md-3">
+							  	<a href="#" class="company">
+							  		<div class="image">
+							  			<img src="https://kareercircle.com/public/logos/1504862880.jpg" >
+							  		</div>
+							  		<h6>Whogohost</h6>
+							  		<div class="rating">
+							  			<i class="my-rating"></i> <span>4.5</span>
+							  		</div>
+							  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+							  	</a>
 							</div>
-
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" role="tab" id="headingTwo">
-					      <h5 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          Collapsible Group Item #2
-					        </a>
-					      </h5>
-					    </div>
-					    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-					      <div class="card-body">
-					        
-					      	<ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
-							  <li class="nav-item">
-							    <a class="nav-item nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-genr" role="tab" aria-controls="pills-home" aria-selected="true">1 General Review</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-salaryr" role="tab" aria-controls="pills-profile" aria-selected="false">0 Salary Reviews</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-interview-tab" data-toggle="pill" href="#pills-interr" role="tab" aria-controls="pills-interview" aria-selected="false">3 Interview Reviews</a>
-							  </li>
-							  <li class="nav-item">
-							    <a class="nav-item nav-link" id="pills-aptitude-tab" data-toggle="pill" href="#pills-aptitude" role="tab" aria-controls="pills-aptitude" aria-selected="false">1 Aptitude Test</a>
-							  </li>
-							</ul>
-							<div class="tab-content" id="pills-tabContent">
-							  <div class="tab-pane fade show active" id="pills-genr" role="tabpanel" aria-labelledby="pills-home-tab">"Great place to work, although the staff..." <a href="#">Read more reviews</a></div>
-							  <div class="tab-pane fade" id="pills-salaryr" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-							  <div class="tab-pane fade" id="pills-interr" role="tabpanel" aria-labelledby="pills-interview-tab">...</div>
-							  <div class="tab-pane fade" id="pills-aptitude" role="tabpanel" aria-labelledby="pills-aptitude-tab">...</div>
+							<div class="col-md-3">
+							  	<a href="#" class="company">
+							  		<div class="image">
+							  			<img src="https://kareercircle.com/public/logos/1507914911.JPG" >
+							  		</div>
+							  		<h6>Monstajams</h6>
+							  		<div class="rating">
+							  			<i class="my-rating"></i> <span>4.5</span>
+							  		</div>
+							  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+							  	</a>
 							</div>
-					      </div>
-					    </div>
-					  </div>
-					  <div class="card">
-					    <div class="card-header" role="tab" id="headingThree">
-					      <h5 class="mb-0">
-					        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          Collapsible Group Item #3
-					        </a>
-					      </h5>
-					    </div>
-					    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-					      <div class="card-body">
-					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-					      </div>
-					    </div>
-					  </div>
+							<div class="col-md-3">
+							  	<a href="#" class="company">
+							  		<div class="image">
+							  			<img src="img/bells.jpg" >
+							  		</div>
+							  		<h6>Bells University</h6>
+							  		<div class="rating">
+							  			<i class="my-rating"></i> <span>4.5</span>
+							  		</div>
+							  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> -->
+							  	</a>
+							</div>
+							<div class="col-md-3">
+							  	<a href="#" class="company">
+							  		<div class="image">
+							  			<img src="img/bells.jpg" >
+							  		</div>
+							  		<h6>Bells University</h6>
+							  		<div class="rating">
+							  			<i class="my-rating"></i> <span>4.5</span>
+							  		</div>
+							  		<!-- <a class="btn btn-block btn-primary" href="#" role="button">Review</a> --> 
+							  	</a>
+							</div>
+							
+						</div>
 					</div>
 				</div>
 			</section>
+
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							&copy Kareer Circle. All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 
@@ -199,6 +284,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/jquery.star-rating-svg.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
