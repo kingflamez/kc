@@ -530,6 +530,45 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 0;
 }
 
+#company .reviews th {
+	border: 0;
+}
+
+#company .reviews td .title {
+	margin: 0;
+}
+
+.fa.yes {
+	color: #0CAA41;
+}
+
+.fa.no {
+	color: #ff4943;
+}
+
+.fa.neutral {
+	color: #333;
+}
+
+#company .reviews .yesno {
+	font-size: 0.8em;
+}
+
+#company .reviews td span {
+    font-size: 0.8em;
+    color: #848484;
+    font-weight: lighter;
+}
+
+#company .reviews .suumr {
+	border: 1px solid #212529;
+	padding: 15px;
+}
+
+#company .reviews .suumr p {
+	margin: 0;
+}
+
 #company .reviews .review {
 	border-bottom: 1px solid #e4e4e4;
 	padding: 20px 15px;
@@ -645,7 +684,12 @@ footer{
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #content {
     transition: transform .5s;
+    background-color: #f2f2f2;
     /*padding: 20px;*/
+}
+
+#content .review .col-12 {
+	margin: 8px auto;
 }
 
 .circle {
